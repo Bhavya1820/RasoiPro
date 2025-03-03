@@ -12,8 +12,8 @@ const reports = () => {
       <section className="bg-gradient-to-b from-gray-900 to-black text-white py-20 px-6 md:px-16 lg:px-24 relative overflow-hidden">
         <div className="mx-auto text-center">
           <h1
-            className="poppins-bold text-5xl md:text-7xl text-[#FFD700] mb-4 drop-shadow-lg overflow-hidden"
-            style={{ textShadow: "2px 2px 8px rgba(255, 215, 0, 0.5)" }}
+            className="poppins-bold text-5xl md:text-7xl text-orange-400 mb-4 drop-shadow-lg overflow-hidden"
+            style={{ textShadow: "2px 2px 8px rgba(255, 102, 0, 0.5)" }}
             data-aos="fade-down"
           >
             Powerful Reports
@@ -30,7 +30,7 @@ const reports = () => {
           >
             Rasoi Pro provides deep insights into your business with detailed
             reports on
-            <span className="text-[#FFD700] font-semibold">
+            <span className="text-orange-400 font-semibold">
               {" "}
               sales, inventory, receivables, payments,
             </span>{" "}

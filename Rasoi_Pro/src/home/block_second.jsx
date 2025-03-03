@@ -16,7 +16,7 @@ const block_second = () => {
             data-aos-duration="2000"
             className="poppins-bold text-4xl md:text-5xl lg:text-6xl text-white"
           >
-            The <span className="text-yellow-400">Rasoi Pro</span> Experience
+            The <span className="text-orange-400">Rasoi Pro</span> Experience
           </h2>
         </div>
         <div

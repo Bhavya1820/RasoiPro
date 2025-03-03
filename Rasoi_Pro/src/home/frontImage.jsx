@@ -69,7 +69,7 @@ const frontImage = () => {
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
           <motion.h4
-            className="poppins-medium text-base text-xl md:text-2xl font-light tracking-wider uppercase bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent"
+            className="poppins-medium text-base text-xl md:text-2xl font-light tracking-wider uppercase bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 bg-clip-text text-transparent"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
@@ -93,13 +93,13 @@ const frontImage = () => {
             transition={{ duration: 1.5, delay: 1, ease: "easeOut" }}
           >
             Running a restaurant is effortless with{" "}
-            <span className="text-yellow-400 font-semibold">Rasoi Pro</span>.
+            <span className="text-orange-400 font-semibold">Rasoi Pro</span>.
             From quick billing to smart inventory tracking, we help you
             streamline operations, enhance customer experience, and boost
             profits—all in one powerful POS.
           </motion.p>
           <motion.button
-            className="poppins-regular mt-5 sm:mt-6 px-6 sm:px-8 py-2 sm:py-3 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold text-base sm:text-lg rounded-full shadow-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl"
+            className="poppins-regular mt-5 sm:mt-6 px-6 sm:px-8 py-2 sm:py-3 bg-orange-400 hover:bg-orange-500 text-gray-900 font-semibold text-base sm:text-lg rounded-full shadow-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             whileHover={{ scale: 1.1 }}

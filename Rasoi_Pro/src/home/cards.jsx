@@ -28,7 +28,7 @@ const cards = () => {
           transition={{ duration: 1 }}
           className="text-center max-w-5xl"
         >
-          <h1 className="poppins-medium text-2xl md:text-4xl font-extrabold bg-gradient-to-r from-yellow-400 to-yellow-800 text-transparent bg-clip-text drop-shadow-lg">
+          <h1 className="poppins-medium text-2xl md:text-4xl font-extrabold bg-gradient-to-r from-yellow-400 to-orange-800 text-transparent bg-clip-text drop-shadow-lg">
           You’ve done everything to build your business. <br /> We help you take the next big step.
         </h1>
         </motion.div>

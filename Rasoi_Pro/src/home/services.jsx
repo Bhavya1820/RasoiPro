@@ -22,7 +22,7 @@ const services = () => {
           <motion.img
             src="https://ik.imagekit.io/jncw2kb8u/blake-wisz-tE6th1h6Bfk-unsplash.jpg?updatedAt=1740836338404"
             alt="Shop Assistant"
-            className="w-full md:min-h-120 rounded-lg shadow-xl border-4 border-yellow-500 object-cover transition-transform duration-500 hover:scale-105"
+            className="w-full md:min-h-120 rounded-lg shadow-xl border-4 border-orange-400 object-cover transition-transform duration-500 hover:scale-105"
             loading="lazy"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -48,7 +48,7 @@ const services = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6">
               <div className="">
-                <FaMoneyCheckDollar className="text-yellow-500 text-4xl sm:text-5xl" />
+                <FaMoneyCheckDollar className="text-orange-400 text-4xl sm:text-5xl" />
                 <div>
                   <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
                     Smooth Payments
@@ -59,7 +59,7 @@ const services = () => {
                 </div>
               </div>
               <div className="">
-                <FaBagShopping className="text-yellow-500 text-4xl sm:text-5xl" />
+                <FaBagShopping className="text-orange-400 text-4xl sm:text-5xl" />
                 <div>
                   <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
                     Convenient Shopping
@@ -93,7 +93,7 @@ const services = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6">
               <div>
-                <h3 className="poppins-medium text-4xl sm:text-5xl font-bold text-yellow-500">
+                <h3 className="poppins-medium text-4xl sm:text-5xl font-bold text-orange-400">
                   25%
                 </h3>
                 <p className="poppins-regular text-gray-500 text-lg">
@@ -101,7 +101,7 @@ const services = () => {
                 </p>
               </div>
               <div>
-                <h3 className="poppins-medium text-4xl sm:text-5xl font-bold text-yellow-500">
+                <h3 className="poppins-medium text-4xl sm:text-5xl font-bold text-orange-400">
                   15%
                 </h3>
                 <p className="poppins-regular text-gray-500 text-lg">
@@ -114,7 +114,7 @@ const services = () => {
           <motion.img
             src="https://ik.imagekit.io/jncw2kb8u/portrait-of-smiling-asian-girl-barista-standing-near-coffee-brewing-kit-making-filter-in-cafe-1.jpg?updatedAt=1740807092223"
             alt="Shop Assistant"
-            className="hidden md:block w-full md:min-h-120 rounded-lg shadow-xl border-4 border-yellow-500 object-cover transition-transform duration-500 hover:scale-105"
+            className="hidden md:block w-full md:min-h-120 rounded-lg shadow-xl border-4 border-orange-400 object-cover transition-transform duration-500 hover:scale-105"
             loading="lazy"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -128,7 +128,7 @@ const services = () => {
           <motion.img
             src="https://ik.imagekit.io/jncw2kb8u/clay-banks-Ox6SW103KtM-unsplash.jpg?updatedAt=1740836516320"
             alt="Shop Assistant"
-            className="hidden md:block w-full md:min-h-120 rounded-lg shadow-xl border-4 border-yellow-500 object-cover transition-transform duration-500 hover:scale-105"
+            className="hidden md:block w-full md:min-h-120 rounded-lg shadow-xl border-4 border-orange-400 object-cover transition-transform duration-500 hover:scale-105"
             loading="lazy"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -153,7 +153,7 @@ const services = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6">
               <div className="">
-                <MdManageAccounts className="text-yellow-500 text-4xl sm:text-5xl" />
+                <MdManageAccounts className="text-orange-400 text-4xl sm:text-5xl" />
                 <div>
                   <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
                     Effortless Order Management
@@ -164,7 +164,7 @@ const services = () => {
                 </div>
               </div>
               <div className="">
-                <MdPayment className="text-yellow-500 text-4xl sm:text-5xl" />
+                <MdPayment className="text-orange-400 text-4xl sm:text-5xl" />
                 <div>
                   <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
                     Fast & Secure Transactions

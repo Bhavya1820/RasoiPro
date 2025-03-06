@@ -21,7 +21,7 @@ const details = () => {
           <img
             src="https://ik.imagekit.io/jncw2kb8u/happy-and-charming-radio-host-looking-away-while-t-2024-11-14-17-13-25-utc-1.png?updatedAt=1741153879730"
             alt="Podcast Host"
-            className="hidden md:block w-full sm:w-11/12 md:w-[70%] h-[600px] object-cover rounded-2xl shadow-lg md:ml-5 lg:ml-20"
+            className="hidden md:block w-full sm:w-11/12 md:w-[70%] h-[600px] object-cover rounded-2xl shadow-lg md:ml-5 lg:ml-20 border-4 border-orange-500"
           />
         </div>
 

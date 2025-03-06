@@ -9,7 +9,7 @@ import {
 import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 
-const contactusfront = () => {
+const aboutusfront = () => {
   const isMedium = useMediaQuery({ minWidth: 768 });
   const rotateX = useMotionValue(0);
   const rotateY = useMotionValue(0);
@@ -39,9 +39,9 @@ const contactusfront = () => {
     <>
       <div className="relative flex justify-center items-center overflow-hidden w-full h-120 perspective-1000">
         <motion.img
-          src="https://ik.imagekit.io/jncw2kb8u/busy-woman-doing-many-things-same-time.jpg?updatedAt=1741153583057"
+          src="https://ik.imagekit.io/jncw2kb8u/cherrydeck-rMILC1PIwM0-unsplash.jpg?updatedAt=1741185029283"
           alt="Luxury Food Display"
-          className="absolute w-full h-full object-cover will-change-transform"
+          className="absolute w-full h-full object-fit will-change-transform"
           style={{
             transformStyle: "preserve-3d",
             rotateX: smoothRotateX,
@@ -75,7 +75,7 @@ const contactusfront = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            {`Home > Contact Us`}
+            {`Home > About Us`}
           </motion.h4>
           <motion.h2
             className="poppins-medium text-2xl sm:text-3xl md:text-6xl leading-snug mt-2 sm:mt-4 text-orange-500"
@@ -83,7 +83,7 @@ const contactusfront = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
           >
-            Contact us
+            About us
           </motion.h2>
         </motion.div>
       </div>
@@ -91,4 +91,4 @@ const contactusfront = () => {
   );
 };
 
-export default contactusfront;
+export default aboutusfront;

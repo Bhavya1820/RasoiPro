@@ -11,14 +11,14 @@ const PreNavbar = () => {
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 md:gap-4 text-xs md:text-sm w-full md:w-auto">
           <div className="flex items-center gap-1">
             <MdCallEnd className="text-gray-500 text-base" />
-            <Link to="tel:18001029944" className="text-gray-800 hover:text-blue-500">
-              1800 102 9944
+            <Link to="tel:+91-8968881110" className="text-gray-800 hover:text-blue-500">
+            +91-8968881110
             </Link>
           </div>
           <div className="flex items-center gap-1">
             <FaWhatsapp className="text-green-500 text-base" />
-            <Link to="https://wa.me/917305654908" className="text-gray-800 hover:text-blue-500">
-              +91 7305654908
+            <Link to="https://wa.link/b9farw" className="text-gray-800 hover:text-blue-500">
+            +91-8968881110
             </Link>
           </div>
         </div>

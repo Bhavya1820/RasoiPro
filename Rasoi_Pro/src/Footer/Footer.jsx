@@ -114,19 +114,19 @@ const Footer = () => {
               <div className="flex items-center gap-2 mt-4">
                 <MdCallEnd className="text-gray-500 text-lg" />
                 <Link
-                  to="tel:18001029944"
+                  to="tel:+91-8968881110"
                   className="text-white hover:text-blue-400 transition"
                 >
-                  Toll Free - 1800 102 9944
+                  +91-8968881110
                 </Link>
               </div>
               <div className="flex items-center gap-2 mt-2">
                 <FaWhatsapp className="text-green-500 text-lg" />
                 <Link
-                  to="https://wa.me/917305654908"
+                  to="https://wa.link/b9farw"
                   className="text-white hover:text-blue-400 transition"
                 >
-                  +91 7305654908
+                  +91-8968881110
                 </Link>
               </div>
             </div>

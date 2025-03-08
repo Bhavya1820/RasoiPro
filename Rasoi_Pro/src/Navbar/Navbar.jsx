@@ -24,8 +24,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="relative bg-black poppins-medium shadow-md p-4 overflow-visible">
-      <div className="container text-white mx-auto flex justify-between items-center">
+    <nav className="sticky top-0 left-0 w-full bg-black shadow-md p-4 poppins-medium z-50">
+      <div className="container text-white flex justify-between items-center">
         {/* Logo */}
         <div>
           <Link to="/">
@@ -42,7 +42,7 @@ const Navbar = () => {
           <div className="relative">
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="inline-block text-white font-medium text-center inline-flex items-center hover:text-blue-500 hover:cursor-pointer"
+              className="inline-block text-white font-medium text-center inline-flex items-center hover:text-orange-500 hover:cursor-pointer"
               type="button"
             >
               Services
@@ -93,15 +93,15 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      to="/paymentintegration"
+                      to="/tableorders"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
-                      Payment Integration
+                      Table Orders
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/reportinganalytics"
+                      to="/reportsandanalytics"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Reporting & Analytics
@@ -109,10 +109,10 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      to="/multilocationsupport"
+                      to="/waiterapp"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
-                      Multi-location Support
+                      Waiter App
                     </Link>
                   </li>
                 </ul>
@@ -120,16 +120,18 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link to="/pricing" className="hover:text-blue-500">
+          <Link to="/pricing" className="hover:text-orange-500">
             Pricing
           </Link>
-          <Link to="/customer" className="hover:text-blue-500">
-            Customers
+          <Link to="/aboutus" className="hover:text-orange-500">
+            Abouts Us
+          </Link>
+          <Link to="/contactus" className="hover:text-orange-500">
+            Contact Us
           </Link>
         </div>
 
         {/* Profile Section */}
-        <div className="hidden md:block"></div>
 
         {/* Mobile Menu Button */}
         <button
@@ -149,7 +151,7 @@ const Navbar = () => {
           <div className="relative">
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="inline-block text-white font-medium text-center inline-flex items-center hover:text-blue-500 hover:cursor-pointer"
+              className="inline-block text-white font-medium text-center inline-flex items-center hover:text-orange-500 hover:cursor-pointer"
               type="button"
             >
               Services
@@ -200,15 +202,15 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      to="/paymentintegration"
+                      to="/tableorders"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
-                      Payment Integration
+                      Table Orders
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/reportinganalytics"
+                      to="/reportsandanalytics"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Reporting & Analytics
@@ -216,23 +218,25 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      to="/multilocationsupport"
+                      to="/waiterapp"
                       className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                     >
-                      Multi-location Support
+                      Waiter App
                     </Link>
                   </li>
                 </ul>
               </div>
             )}
           </div>
-          <Link to="/pricing" className="block py-2 hover:text-blue-500">
+          <Link to="/pricing" className="block py-2 hover:text-orange-500">
             Pricing
           </Link>
-          <Link to="/customer" className="block py-2 hover:text-blue-500">
-            Customers
+          <Link to="/aboutus" className="hover:text-orange-500">
+            Abouts Us
           </Link>
-          <div className="py-2">Profile Section</div>
+          <Link to="/contactus" className="hover:text-orange-500">
+            Contact Us
+          </Link>
         </div>
       )}
     </nav>

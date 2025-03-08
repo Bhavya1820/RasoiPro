@@ -15,7 +15,7 @@ const home = () => {
   const isMedium = useMediaQuery({ minWidth: 768 });
   return (
     <>
-    <div className='hidden md:block'><PreNavbar></PreNavbar></div>
+    {/* <div className='hidden md:block'><PreNavbar></PreNavbar></div> */}
     <Navbar></Navbar>
     {/* <FrontText></FrontText> */}
     <FrontImage></FrontImage>

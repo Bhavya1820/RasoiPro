@@ -6,28 +6,28 @@ import "aos/dist/aos.css";
 const Feedback = () => {
   const feedbacks = [
     {
-      text: "We had used three different software solutions before Zakya, and each transition took almost 20 days, employee training took 2-3 days, and we had to prepare a minimum of 40-50 customer bills to get accustomed to the system. With Zakya's seamless transition and user-friendly interface, training became unnecessary. Our employees started using Zakya effortlessly from the moment of implementation.",
+      text: "We had used three different software solutions before Rasoi Pro, and each transition took almost 20 days, employee training took 2-3 days, and we had to prepare a minimum of 40-50 customer bills to get accustomed to the system. With Rasoi Pro's seamless transition and user-friendly interface, training became unnecessary. Our employees started using Rasoi Pro effortlessly from the moment of implementation.",
       customerImage:
         "https://ik.imagekit.io/jncw2kb8u/client1.jpg?updatedAt=1738850173431",
       customerName: "Rohit Singh",
       position: "Co-founder, Fresh Mills",
     },
     {
-      text: "Zakya not just facilitated digitization by making it a paperless environment but has also contributed to making it ownerless. Now, my business is not solely dependent on me. Within the first month and a half of setting up our first store, we were able to witness an exceptional 500% increase in month-on-month turnover, and now we have opened our second store too.",
+      text: "Rasoi Pro not just facilitated digitization by making it a paperless environment but has also contributed to making it ownerless. Now, my business is not solely dependent on me. Within the first month and a half of setting up our first store, we were able to witness an exceptional 500% increase in month-on-month turnover, and now we have opened our second store too.",
       customerImage:
         "https://ik.imagekit.io/jncw2kb8u/client2.jpg?updatedAt=1738850172982",
       customerName: "Mohit Sharma",
       position: "Co-founder, Wanaw Enterprises",
     },
     {
-      text: "We were in search of a robust, user-friendly, and reliable software for our Pooja store. Zakya exceeded my expectations, and met all our business requirements. I strongly recommend Zakya for any business who's looking for a scalable software that keeps growing along with your business. With just your inventory data, you can get your business up and running on Zakya in less than 10 minutes.",
+      text: "We were in search of a robust, user-friendly, and reliable software for our Pooja store. Rasoi Pro exceeded my expectations, and met all our business requirements. I strongly recommend Rasoi Pro for any business who's looking for a scalable software that keeps growing along with your business. With just your inventory data, you can get your business up and running on Rasoi Pro in less than 10 minutes.",
       customerImage:
         "https://ik.imagekit.io/jncw2kb8u/client1.jpg?updatedAt=1738850173431",
       customerName: "Harsh Aggarwal",
       position: "Co-founder, Wanaw Enterprises",
     },
     {
-      text: "Apart from Zakya's powerful forecasting and real-time monitoring that helps me as a business owner, I love Zakya's user interface. It is simple and easy to understand for anyone. I say this because all the operations at our retail store are managed by staff with very little tech expertise. Zakya has made it easy for them to adapt on the go without any need for extensive training.",
+      text: "Apart from Rasoi Pro's powerful forecasting and real-time monitoring that helps me as a business owner, I love Rasoi Pro's user interface. It is simple and easy to understand for anyone. I say this because all the operations at our retail store are managed by staff with very little tech expertise. Rasoi Pro has made it easy for them to adapt on the go without any need for extensive training.",
       customerImage:
         "https://ik.imagekit.io/jncw2kb8u/client2.jpg?updatedAt=1738850172982",
       customerName: "Himanshu Sharma",

@@ -15,7 +15,7 @@ import {
 import { RiUserSettingsLine, RiBarChartBoxLine } from "react-icons/ri";
 import { HiUsers, HiChartPie } from "react-icons/hi";
 
-const content = () => {
+const features = () => {
   return (
     <>
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-24 bg-white text-gray-900 overflow-hidden">
@@ -25,13 +25,14 @@ const content = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Elevate Your Inventory Management with <span className="text-orange-500">Rasoi Pro</span>
+          Streamline Your Table Orders with{" "}
+          <span className="text-orange-500">Rasoi Pro</span>
         </motion.h1>
 
         {/* Section 1 */}
         <section className="grid md:grid-cols-2 gap-16 md:gap-24 items-center">
           <motion.img
-            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-06%20174748.png"
+            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-06%20180757.png?updatedAt=1741264946099"
             alt="Real-time Stock Tracking"
             className="hidden md:block w-full rounded-xl shadow-lg border-4 border-orange-500 object-fit transition-transform duration-500 hover:scale-105"
             loading="lazy"
@@ -49,11 +50,12 @@ const content = () => {
           >
             <div className="border-b border-gray-600 pb-6">
               <h2 className="poppins-semibold text-3xl sm:text-4xl font-bold mb-6 text-gray-800">
-                Real-time Stock Tracking
+                Streamline Table Orders with Ease
               </h2>
               <p className="poppins-regular text-gray-600 text-lg">
-                Monitor stock levels in real-time for flawless inventory control
-                and optimized business performance.
+                Take and manage table orders effortlessly, ensuring accurate and
+                efficient service. Enhance the dining experience with a seamless
+                ordering system.
               </p>
             </div>
 
@@ -61,19 +63,19 @@ const content = () => {
               <div>
                 <MdUpdate className="text-orange-400 text-4xl sm:text-5xl" />
                 <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                  Instant Updates
+                  Effortless Order Management
                 </h3>
                 <p className="poppins-regular text-gray-500">
-                  Never miss a change in stock levels.
+                  Simplifies taking and managing orders.
                 </p>
               </div>
               <div>
                 <MdOutlineInventory className="text-orange-400 text-4xl sm:text-5xl" />
                 <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                  Effortless Management
+                  Enhanced Dining Experience
                 </h3>
                 <p className="poppins-regular text-gray-500">
-                  Keep track with ease and accuracy.
+                  Ensures accuracy and efficient service
                 </p>
               </div>
             </div>
@@ -90,10 +92,12 @@ const content = () => {
           >
             <div className="border-b border-gray-600 pb-6">
               <h2 className="poppins-semibold text-3xl sm:text-4xl font-bold mb-6 text-gray-800">
-                Seamless Order Processing
+                Fast & Error-Free Table Ordering
               </h2>
               <p className="poppins-regular text-gray-600 text-lg">
-                Automate and streamline your orders for a superior workflow.
+                Reduce wait times and minimize mistakes with our intuitive table
+                order system. Improve staff efficiency and keep your customers
+                happy.
               </p>
             </div>
 
@@ -101,26 +105,26 @@ const content = () => {
               <div>
                 <FaClipboardList className="text-orange-400 text-4xl sm:text-5xl" />
                 <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                  Fast Processing
+                  Faster Order Processing
                 </h3>
                 <p className="poppins-regular text-gray-500">
-                  Speed up orders with precision.
+                  Reduces wait times for orders.
                 </p>
               </div>
               <div>
                 <FaChartLine className="text-orange-400 text-4xl sm:text-5xl" />
                 <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                  Enhanced Efficiency
+                  Error-Free Transactions
                 </h3>
                 <p className="poppins-regular text-gray-500">
-                  Eliminate delays and reduce errors.
+                  Minimizes mistakes in orders.
                 </p>
               </div>
             </div>
           </motion.article>
 
           <motion.img
-            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-06%20180757.png"
+            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-08%20140958.png?updatedAt=1741423217216"
             alt="Order Management"
             className="hidden md:block w-full rounded-xl shadow-lg border-4 border-orange-500 object-fit transition-transform duration-500 hover:scale-105"
             loading="lazy"
@@ -134,7 +138,7 @@ const content = () => {
         {/* Section 3 - Staff Management */}
         <section className="grid sm:grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center mt-24">
           <motion.img
-            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-07%20110005.png?updatedAt=1741325521025"
+            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-08%20141411.png?updatedAt=1741423526950"
             alt="Staff Management"
             className="hidden md:block w-full md:min-h-120 rounded-3xl shadow-2xl border-4 border-orange-500 object-contain transition-transform duration-500 hover:scale-105 overflow-hidden"
             loading="lazy"
@@ -151,11 +155,12 @@ const content = () => {
           >
             <div className="border-b border-gray-300 pb-6">
               <h2 className="poppins-semibold text-3xl sm:text-4xl font-bold mb-6 text-gray-800">
-                Elevate Your Staff Management with Precision.
+                Boost Efficiency with Table Order Automation
               </h2>
               <p className="poppins-regular text-gray-600 text-lg">
-                Streamline operations, assign tasks, and boost productivity with
-                intuitive staff management tools.
+                Speed up order processing, prevent delays, and enhance
+                coordination between waitstaff and kitchen for a flawless dining
+                experience.
               </p>
             </div>
 
@@ -164,10 +169,10 @@ const content = () => {
                 <HiUsers className="text-orange-400 text-4xl sm:text-5xl" />
                 <div>
                   <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                    Effortless Coordination
+                    Minimized Service Delays
                   </h3>
                   <p className="poppins-regular text-gray-500">
-                    Assign roles and monitor progress seamlessly.
+                    Reduce wait times significantly.
                   </p>
                 </div>
               </div>
@@ -175,10 +180,10 @@ const content = () => {
                 <RiUserSettingsLine className="text-orange-400 text-4xl sm:text-5xl" />
                 <div>
                   <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                    Optimized Workforce
+                    Seamless Kitchen Operations
                   </h3>
                   <p className="poppins-regular text-gray-500">
-                    Increase efficiency with smart staff management.
+                    Optimize meal preparation workflow.
                   </p>
                 </div>
               </div>
@@ -196,11 +201,11 @@ const content = () => {
           >
             <div className="border-b border-gray-300 pb-6">
               <h2 className="poppins-semibold text-3xl sm:text-4xl font-bold mb-6 text-gray-800">
-                Data-Driven Insights for Smart Decisions.
+                Seamless Table Order Experience
               </h2>
               <p className="poppins-regular text-gray-600 text-lg">
-                Leverage real-time analytics and reports to optimize performance
-                and drive growth.
+                From order placement to kitchen preparation, our system ensures
+                every table receives the right meal at the right time.
               </p>
             </div>
 
@@ -209,10 +214,10 @@ const content = () => {
                 <RiBarChartBoxLine className="text-orange-400 text-4xl sm:text-5xl" />
                 <div>
                   <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                    Advanced Analytics
+                    Efficient Order Management
                   </h3>
                   <p className="poppins-regular text-gray-500">
-                    Gain in-depth insights to enhance decision-making.
+                    Streamlines order processing seamlessly.
                   </p>
                 </div>
               </div>
@@ -220,17 +225,17 @@ const content = () => {
                 <HiChartPie className="text-orange-400 text-4xl sm:text-5xl" />
                 <div>
                   <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                    Performance Optimization
+                    Accurate Meal Delivery
                   </h3>
                   <p className="poppins-regular text-gray-600">
-                    Make informed business choices with detailed reports.
+                    Ensures timely and correct serving.
                   </p>
                 </div>
               </div>
             </div>
           </motion.article>
           <motion.img
-            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-08%20141159.png?updatedAt=1741423373612"
+            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-06%20180757.png?updatedAt=1741264946099"
             alt="Reports and Analytics"
             className="hidden md:block w-full md:min-h-120 rounded-3xl shadow-2xl border-4 border-orange-500 object-contain transition-transform duration-500 hover:scale-105"
             loading="lazy"
@@ -245,4 +250,4 @@ const content = () => {
   );
 };
 
-export default content;
+export default features;

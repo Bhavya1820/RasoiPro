@@ -8,66 +8,58 @@ const FAQ = () => {
     {
       duration:"800",
       question:
-        "I am just starting with adapting technology for my business. Is Zakya for me?",
+        "I am just starting with adapting technology for my business. Is Rasoi Pro for me?",
       answer: [
-        "Yes, Zakya is definitely for you. Zakya is easy-to-use and adapt to. It's specially built for growing retail businesses with less to no tech expertise to manage their store more efficiently. You can try the free trial of the product before buying.",
+        "Yes, Rasoi Pro is definitely for you. Rasoi Pro is easy-to-use and adapt to. It's specially built for growing retail businesses with less to no tech expertise to manage their store more efficiently. You can try the free trial of the product before buying.",
       ],
     },
     {
       duration:"1000",
-      question: "Can I get a demo of Zakya?",
+      question: "Can I get a demo of Rasoi Pro?",
       answer: [
-        "Yes, we would be happy to demonstrate Zakya through a web-conference at your convenience. The demo is a one-hour session. To schedule your personal session, please contact sales@zakya.com.",
+        "Yes, we would be happy to demonstrate Rasoi Pro through a web-conference at your convenience. The demo is a one-hour session. To schedule your personal session, please contact contact.rasoipro@gmail.com.",
       ],
     },
     {
       duration:"1200",
       question: "Can I get a free trial of the product?",
       answer: [
-        "Yes, there's a 15-day free trial version of Zakya that you can try. The free trial includes all the features of the Premium plan.",
+        "Yes, there's a 15-day free trial version of Rasoi Pro that you can try. The free trial includes all the features of the Premium plan.",
       ],
     },
     {
       duration:"1400",
       question: "What happens after my trial ends?",
       answer: [
-        "Once your trial ends, your account will be moved to the Free plan.",
+        "Once your trial ends, your account will be removed to the Free plan.",
       ],
     },
     {
       duration:"1600",
       question: "How long can I use the Free plan?",
       answer: [
-        "Zakya's Free plan is indefinitely free. It does, however, include feature limitations that can be overcome with the paid plan.",
+        "Rasoi Pro's Free plan is indefinitely free. It does, however, include feature limitations that can be overcome with the paid plan.",
       ],
     },
     {
       duration:"1800",
       question: "What are my payment options?",
       answer: [
-        "We accept payments via Visa, MasterCard, American Express, and PayPal. We also accept payment via bank transfer or check transfer for yearly subscriptions. For more details, please contact sales@zakya.com.",
+        "We accept payments via Visa, MasterCard, American Express, and PayPal. We also accept payment via bank transfer or check transfer for yearly subscriptions. For more details, please contact contact.rasoipro@gmail.com.",
       ],
     },
     {
       duration:"2000",
-      question:
-        "Can I get my money back if I'm not satisfied with the product?",
-      answer: [
-        "If you're not satisfied with the product you can cancel your subscription at any time and we'll refund your purchase amount in full. For more information, read our complete refund policy here.",
-      ],
-    },
-    {
-      duration:"2200",
       question: "Is my data safe?",
       answer: [
         "Yes, your data is safe and secure. Our facilities feature stringent 24/7/365 security with video monitoring, biometric access, and advanced fire, flood, and theft monitoring systems. Our network security system employs the latest encryption and intrusion detection and prevention technologies.",
       ],
     },
     {
-      duration:"2400",
+      duration:"2200",
       question: "How do I reach your support team?",
       answer: [
-        "You can contact us by phone at 1800 102 9944 (toll free), WhatsApp at 7305654908, or email at support@zakya.com. Our support team is available from 7:30 AM to 11:00 PM, Monday through Friday, and from 9:00 AM to 6:00 PM on the weekends to answer your questions.",
+        "You can contact us by phone at +91-8968881110 (toll free), WhatsApp at 91-8968881110, or email at contact.rasoipro@gmail.com. Our support team is available from 7:30 AM to 11:00 PM, Monday through Friday, and from 9:00 AM to 6:00 PM on the weekends to answer your questions.",
       ],
     },
   ];

@@ -10,7 +10,7 @@ import ContactForm from '../ContactUs/contactForm'
 const contactus = () => {
   return (
     <>
-    <PreNavbar></PreNavbar>
+    {/* <PreNavbar></PreNavbar> */}
     <Navbar></Navbar>
     <Contactusfront></Contactusfront>
     <Details></Details>

@@ -9,7 +9,7 @@ import FAQ from '../pricing/FAQ'
 const pricing = () => {
   return (
     <>
-    <div className='hidden md:block'><PreNavbar></PreNavbar></div>
+    {/* <div className='hidden md:block'><PreNavbar></PreNavbar></div> */}
     <Navbar></Navbar>
     <Front></Front>
     <Feedback></Feedback>

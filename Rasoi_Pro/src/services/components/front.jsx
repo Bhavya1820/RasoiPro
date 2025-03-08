@@ -8,6 +8,8 @@ import {
 } from "framer-motion";
 import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
+
 
 const front = ({ Url, Text1, Text2 }) => {
   const isMedium = useMediaQuery({ minWidth: 768 });
@@ -59,7 +61,7 @@ const front = ({ Url, Text1, Text2 }) => {
         )}
 
         {/* Overlay for readability */}
-        <div className="absolute w-full h-full inset-0 bg-black opacity-70 backdrop-blur-lg"></div>
+        <div className="absolute w-full h-full inset-0 bg-black opacity-80 backdrop-blur-lg"></div>
 
         {/* Text Container */}
         <motion.div
@@ -90,15 +92,17 @@ const front = ({ Url, Text1, Text2 }) => {
           >
             {Text2}
           </motion.p>
-          <motion.button
-            className="poppins-regular mt-5 sm:mt-6 px-6 sm:px-8 py-2 sm:py-3 bg-orange-400 hover:bg-orange-500 text-gray-900 font-semibold text-base sm:text-lg rounded-full shadow-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 1, delay: 1.5, ease: "easeOut" }}
-          >
-            Get Started
-          </motion.button>
+          <Link to="/pricing">
+            <motion.button
+              className="poppins-regular mt-5 sm:mt-6 px-6 sm:px-8 py-2 sm:py-3 bg-orange-400 hover:bg-orange-500 text-gray-900 font-semibold text-base sm:text-lg rounded-full shadow-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 1, delay: 1.5, ease: "easeOut" }}
+            >
+              Get Started
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </>

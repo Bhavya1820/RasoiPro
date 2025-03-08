@@ -11,12 +11,38 @@ import {
 import { useState } from "react";
 
 const Footer = () => {
+  const item = [
+    {
+      text:"Inventory Management",
+      link:"/inventorymanagement"
+    },
+    {
+      text:"Order Management",
+      link:"/ordermanagement"
+    },
+    {
+      text:"Staff Management",
+      link:"/staffmanagement"
+    },
+    {
+      text:"Payment Integration",
+      link:"/paymentintegration"
+    },
+    {
+      text:"Reporting & Analytics",
+      link:"/reportsandanalytics"
+    },
+    {
+      text:"Waiter App",
+      link:"/waiterapp"
+    },
+  ]
   const [showQuickLinks, setShowQuickLinks] = useState(false);
   const [showCompany, setShowCompany] = useState(false);
   return (
     <>
       <footer className="poppins-regular bg-black text-white p-10 md:p-16">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-15">
           {/* Description Section */}
           <div>
             <img
@@ -38,7 +64,7 @@ const Footer = () => {
               className="text-lg font-semibold cursor-pointer md:cursor-auto border-b-2 border-blue-500 pb-2 flex justify-between items-center md:block"
               onClick={() => setShowQuickLinks(!showQuickLinks)}
             >
-              QUICK LINKS
+              Services
               <span className="md:hidden">
                 {showQuickLinks ? <FaChevronUp /> : <FaChevronDown />}
               </span>
@@ -48,20 +74,13 @@ const Footer = () => {
                 showQuickLinks ? "block" : "hidden"
               }`}
             >
-              {[
-                "Inventory Management",
-                "Sales Management",
-                "Payment Management",
-                "Customer Management",
-                "Multi-outlet Management",
-                "Pricing",
-              ].map((item, index) => (
+              {item.map((item, index) => (
                 <li key={index}>
                   <Link
-                    to="#"
+                    to={item.link}
                     className="text-white hover:text-blue-400 transition"
                   >
-                    {item}
+                    {item.text}
                   </Link>
                 </li>
               ))}
@@ -69,7 +88,7 @@ const Footer = () => {
           </div>
 
           {/* Company */}
-          <div>
+          {/* <div>
             <h4
               className="text-lg font-semibold cursor-pointer md:cursor-auto border-b-2 border-blue-500 pb-2 flex justify-between items-center md:block"
               onClick={() => setShowCompany(!showCompany)}
@@ -102,7 +121,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact & Socials */}
           <div className="space-y-6">

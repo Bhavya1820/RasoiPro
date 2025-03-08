@@ -15,7 +15,7 @@ import {
 import { RiUserSettingsLine, RiBarChartBoxLine } from "react-icons/ri";
 import { HiUsers, HiChartPie } from "react-icons/hi";
 
-const content = () => {
+const features = () => {
   return (
     <>
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-24 bg-white text-gray-900 overflow-hidden">
@@ -25,13 +25,15 @@ const content = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Elevate Your Inventory Management with <span className="text-orange-500">Rasoi Pro</span>
+          Enhance Your Table Service with <br />
+          <span className="text-orange-500">Rasoi Pro</span>
+          Waiter App
         </motion.h1>
 
         {/* Section 1 */}
         <section className="grid md:grid-cols-2 gap-16 md:gap-24 items-center">
           <motion.img
-            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-06%20174748.png"
+            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-08%20165629.png?updatedAt=1741433308650"
             alt="Real-time Stock Tracking"
             className="hidden md:block w-full rounded-xl shadow-lg border-4 border-orange-500 object-fit transition-transform duration-500 hover:scale-105"
             loading="lazy"
@@ -49,11 +51,11 @@ const content = () => {
           >
             <div className="border-b border-gray-600 pb-6">
               <h2 className="poppins-semibold text-3xl sm:text-4xl font-bold mb-6 text-gray-800">
-                Real-time Stock Tracking
+                Instant Order Taking
               </h2>
               <p className="poppins-regular text-gray-600 text-lg">
-                Monitor stock levels in real-time for flawless inventory control
-                and optimized business performance.
+                Waiters can take orders directly on the app, ensuring accuracy
+                and speed.
               </p>
             </div>
 
@@ -61,19 +63,19 @@ const content = () => {
               <div>
                 <MdUpdate className="text-orange-400 text-4xl sm:text-5xl" />
                 <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                  Instant Updates
+                  Order Accuracy
                 </h3>
                 <p className="poppins-regular text-gray-500">
-                  Never miss a change in stock levels.
+                  Minimizes errors in order-taking.
                 </p>
               </div>
               <div>
                 <MdOutlineInventory className="text-orange-400 text-4xl sm:text-5xl" />
                 <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                  Effortless Management
+                  Faster Service
                 </h3>
                 <p className="poppins-regular text-gray-500">
-                  Keep track with ease and accuracy.
+                  Speeds up the ordering process.
                 </p>
               </div>
             </div>
@@ -90,10 +92,10 @@ const content = () => {
           >
             <div className="border-b border-gray-600 pb-6">
               <h2 className="poppins-semibold text-3xl sm:text-4xl font-bold mb-6 text-gray-800">
-                Seamless Order Processing
+                Real-Time Kitchen Updates
               </h2>
               <p className="poppins-regular text-gray-600 text-lg">
-                Automate and streamline your orders for a superior workflow.
+                Orders are instantly sent to the kitchen, reducing wait times.
               </p>
             </div>
 
@@ -101,26 +103,26 @@ const content = () => {
               <div>
                 <FaClipboardList className="text-orange-400 text-4xl sm:text-5xl" />
                 <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                  Fast Processing
+                  Faster Order Processing
                 </h3>
                 <p className="poppins-regular text-gray-500">
-                  Speed up orders with precision.
+                  Orders reach the kitchen instantly.
                 </p>
               </div>
               <div>
                 <FaChartLine className="text-orange-400 text-4xl sm:text-5xl" />
                 <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                  Enhanced Efficiency
+                  Improved Customer Experience
                 </h3>
                 <p className="poppins-regular text-gray-500">
-                  Eliminate delays and reduce errors.
+                  Reduced wait times enhance satisfaction.
                 </p>
               </div>
             </div>
           </motion.article>
 
           <motion.img
-            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-06%20180757.png"
+            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-08%20170157.png?updatedAt=1741433562825"
             alt="Order Management"
             className="hidden md:block w-full rounded-xl shadow-lg border-4 border-orange-500 object-fit transition-transform duration-500 hover:scale-105"
             loading="lazy"
@@ -134,7 +136,7 @@ const content = () => {
         {/* Section 3 - Staff Management */}
         <section className="grid sm:grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center mt-24">
           <motion.img
-            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-07%20110005.png?updatedAt=1741325521025"
+            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-08%20163711.png?updatedAt=1741432100193"
             alt="Staff Management"
             className="hidden md:block w-full md:min-h-120 rounded-3xl shadow-2xl border-4 border-orange-500 object-contain transition-transform duration-500 hover:scale-105 overflow-hidden"
             loading="lazy"
@@ -151,11 +153,10 @@ const content = () => {
           >
             <div className="border-b border-gray-300 pb-6">
               <h2 className="poppins-semibold text-3xl sm:text-4xl font-bold mb-6 text-gray-800">
-                Elevate Your Staff Management with Precision.
+                Table Management
               </h2>
               <p className="poppins-regular text-gray-600 text-lg">
-                Streamline operations, assign tasks, and boost productivity with
-                intuitive staff management tools.
+                Easily assign and track orders for different tables.
               </p>
             </div>
 
@@ -164,10 +165,10 @@ const content = () => {
                 <HiUsers className="text-orange-400 text-4xl sm:text-5xl" />
                 <div>
                   <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                    Effortless Coordination
+                    Table-Specific Order Assignment
                   </h3>
                   <p className="poppins-regular text-gray-500">
-                    Assign roles and monitor progress seamlessly.
+                    Assign orders to designated tables.
                   </p>
                 </div>
               </div>
@@ -175,10 +176,10 @@ const content = () => {
                 <RiUserSettingsLine className="text-orange-400 text-4xl sm:text-5xl" />
                 <div>
                   <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                    Optimized Workforce
+                    Real-Time Order Tracking
                   </h3>
                   <p className="poppins-regular text-gray-500">
-                    Increase efficiency with smart staff management.
+                    Monitor order progress instantly.
                   </p>
                 </div>
               </div>
@@ -196,11 +197,10 @@ const content = () => {
           >
             <div className="border-b border-gray-300 pb-6">
               <h2 className="poppins-semibold text-3xl sm:text-4xl font-bold mb-6 text-gray-800">
-                Data-Driven Insights for Smart Decisions.
+                Order Modifications.
               </h2>
               <p className="poppins-regular text-gray-600 text-lg">
-                Leverage real-time analytics and reports to optimize performance
-                and drive growth.
+                Make changes to orders instantly without hassle.
               </p>
             </div>
 
@@ -209,10 +209,10 @@ const content = () => {
                 <RiBarChartBoxLine className="text-orange-400 text-4xl sm:text-5xl" />
                 <div>
                   <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                    Advanced Analytics
+                    Instant Order Modifications
                   </h3>
                   <p className="poppins-regular text-gray-500">
-                    Gain in-depth insights to enhance decision-making.
+                    Modify orders quickly without delays.
                   </p>
                 </div>
               </div>
@@ -220,17 +220,17 @@ const content = () => {
                 <HiChartPie className="text-orange-400 text-4xl sm:text-5xl" />
                 <div>
                   <h3 className="poppins-medium text-lg sm:text-xl text-gray-700">
-                    Performance Optimization
+                    Hassle-Free Updates
                   </h3>
                   <p className="poppins-regular text-gray-600">
-                    Make informed business choices with detailed reports.
+                    Change orders smoothly with ease.
                   </p>
                 </div>
               </div>
             </div>
           </motion.article>
           <motion.img
-            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-08%20141159.png?updatedAt=1741423373612"
+            src="https://ik.imagekit.io/jncw2kb8u/Screenshot%202025-03-08%20165629.png?updatedAt=1741433308650"
             alt="Reports and Analytics"
             className="hidden md:block w-full md:min-h-120 rounded-3xl shadow-2xl border-4 border-orange-500 object-contain transition-transform duration-500 hover:scale-105"
             loading="lazy"
@@ -245,4 +245,4 @@ const content = () => {
   );
 };
 
-export default content;
+export default features;

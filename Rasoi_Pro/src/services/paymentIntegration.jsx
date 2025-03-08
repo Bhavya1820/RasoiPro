@@ -3,17 +3,17 @@ import PreNavbar from '../PreNavbar/PreNavbar'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Front from './components/front'
-import Features from './inventory/features'
-import Report from './inventory/report'
-import { useMediaQuery } from "react-responsive";
-import Report2 from './inventory/report2'
 import AffordablePrice from './components/affordablePrice'
+import Features from './paymentIntegration/features'
+import Report from './inventory/report'
+import Report2 from './inventory/report2'
+import { useMediaQuery } from "react-responsive";
 
-const InventoryManagement = () => {
+const paymentIntegration = () => {
   const isMobile = useMediaQuery({ maxWidth: 1400 });
-  const url="https://ik.imagekit.io/jncw2kb8u/medium-shot-woman-with-tablet.jpg?updatedAt=1741074086408"
-  const text1= "Effortless Inventory Control for Your Business"
-  const text2= "Track, manage, and optimize your restaurant's stock seamlessly. Reduce waste, avoid stockouts, and ensure smooth kitchen operations with our advanced inventory management system."
+  const url="https://ik.imagekit.io/jncw2kb8u/payment-gateway-integration-1.webp?updatedAt=1741412616479"
+  const text1= "Seamless Payment Integration for Your Business."
+  const text2= "Accept payments effortlessly with our secure and flexible payment integration. Streamline transactions, reduce errors, and offer multiple payment options for a seamless checkout experience."
   return (
     <>
     <PreNavbar></PreNavbar>
@@ -27,4 +27,4 @@ const InventoryManagement = () => {
   )
 }
 
-export default InventoryManagement
+export default paymentIntegration

@@ -39,7 +39,7 @@ const aboutusfront = () => {
     <>
       <div className="relative flex justify-center items-center overflow-hidden w-full h-120 perspective-1000">
         <motion.img
-          src="https://ik.imagekit.io/jncw2kb8u/cherrydeck-rMILC1PIwM0-unsplash.jpg?updatedAt=1741185029283"
+          src="https://ik.imagekit.io/jncw2kb8u/about.jpg?updatedAt=1741239882535"
           alt="Luxury Food Display"
           className="absolute w-full h-full object-fit will-change-transform"
           style={{

@@ -1,10 +1,37 @@
 import React, { useState } from "react";
 
 const contactForm = () => {
+  const options = [
+    "Inventory Management",
+    "Staff Management",
+    "Order Management",
+    "Waiter App",
+    "Table Orders",
+    "Payment Integration",
+    "Reporting & Analytics",
+    "Multi-location Support",
+    "Bar Inventory",
+    "Room Booking",
+    "Client Panel",
+    "Create Order",
+    "Create Menu",
+    "Create Staff",
+  ];
+
   const [selectedValue, setSelectedValue] = useState("");
+  const [selectedOptions, setSelectedOptions] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleChange = (event) => {
     setSelectedValue(event.target.value);
+  };
+
+  const handleSelection = (option) => {
+    setSelectedOptions((prev) =>
+      prev.includes(option)
+        ? prev.filter((item) => item !== option)
+        : [...prev, option]
+    );
   };
 
   return (
@@ -65,6 +92,40 @@ const contactForm = () => {
               <option value="restaurant">Restaurant</option>
               <option value="store">Store</option>
             </select>
+          </div>
+          <div className="mb-4 mt-6 relative">
+            <label className="poppins-medium block mb-2 text-lg md:text-xl">
+              Service
+            </label>
+            <div
+              className="w-full bg-gray-700 md:h-15 p-3 text-white p-2 rounded cursor-pointer"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {selectedOptions.length > 0
+                ? selectedOptions.join(", ")
+                : "-- Choose an option --"}
+            </div>
+            {isOpen && (
+              <div className="absolute w-full bg-gray-700 mt-2 rounded shadow-md max-h-60 overflow-auto">
+                {options.map((option) => (
+                  <div
+                    key={option}
+                    className={`p-2 cursor-pointer hover:bg-gray-600 flex items-center ${
+                      selectedOptions.includes(option) ? "bg-gray-500" : ""
+                    }`}
+                    onClick={() => handleSelection(option)}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={selectedOptions.includes(option)}
+                      className="mr-2"
+                      readOnly
+                    />
+                    {option}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
           <div className="mb-4">
             <label className="poppins-medium block mb-2 text-lg md:text-xl">

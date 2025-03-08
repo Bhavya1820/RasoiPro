@@ -32,7 +32,7 @@ const Navbar = () => {
             <img
               src="https://ik.imagekit.io/jncw2kb8u/rasoinavbar.png?updatedAt=1740657833135"
               alt="Logo"
-              className="h-10 w-25"
+              className="h-12 w-25"
             />
           </Link>
         </div>

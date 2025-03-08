@@ -1,7 +1,7 @@
 const express = require("express");
 const connectDB = require("./db");
 const Form = require("./form");
-var cors = require('cors');
+var cors = require("cors");
 require("dotenv").config();
 
 const app = express();
@@ -9,31 +9,49 @@ const PORT = process.env.PORT;
 connectDB();
 
 app.use(express.json());
-app.use(express.urlencoded({extended:false}));
-app.use(cors()) 
+app.use(express.urlencoded({ extended: false }));
+app.use(cors());
 
 //API route for form submission
 app.post("/submit", async (req, res) => {
-  //console.log(req.body)
-  const { firstName, lastName, email, phoneNumber, message } = req.body;
-  //console.log({ firstName, lastName, email, phoneNumber, message })
+  const { fullName, email, phoneNumber, businessType, services, message } =
+    req.body;
 
   try {
+    // Check if required fields are missing
+    if (
+      !fullName ||
+      !email ||
+      !phoneNumber ||
+      !businessType ||
+      !services.length
+    ) {
+      return res
+        .status(400)
+        .json({ error: "All required fields must be filled!" });
+    }
 
-      // Check if email already exists
-      const existingEmail = await Form.findOne({ email });
-      if (existingEmail) {
-          return res.status(400).json({ error: "Email already exists" });
-      }
+    // Check if email already exists
+    const existingEmail = await RasoiPro.findOne({ email });
+    if (existingEmail) {
+      return res.status(400).json({ error: "Email already exists" });
+    }
 
-      
-      const newForm = new Form({ firstName, lastName, email, phoneNumber, message });
-      //console.log(newForm)
-      await newForm.save();
-      res.status(201).json({ success: "Form submitted successfully!" });
+    // Create and save the new form entry
+    const newForm = new RasoiPro({
+      fullName,
+      email,
+      phoneNumber,
+      businessType,
+      services,
+      message,
+    });
+
+    await newForm.save();
+    res.status(201).json({ success: "Form submitted successfully!" });
   } catch (error) {
-      console.log(error)
-      res.status(500).json({error:"database error"});
+    console.error("Database Error:", error);
+    res.status(500).json({ error: "Database error" });
   }
 });
 

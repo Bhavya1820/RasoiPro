@@ -1,5 +1,4 @@
 import React from 'react'
-import PreNavbar from '../PreNavbar/PreNavbar'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Front from './components/front'
@@ -16,7 +15,6 @@ const InventoryManagement = () => {
   const text2= "Track, manage, and optimize your restaurant's stock seamlessly. Reduce waste, avoid stockouts, and ensure smooth kitchen operations with our advanced inventory management system."
   return (
     <>
-    <PreNavbar></PreNavbar>
     <Navbar></Navbar>
     <Front Url={url} Text1={text1} Text2={text2}></Front>
     <Features></Features>

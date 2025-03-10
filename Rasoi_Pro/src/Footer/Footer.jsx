@@ -61,7 +61,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4
-              className="text-lg font-semibold cursor-pointer md:cursor-auto border-b-2 border-blue-500 pb-2 flex justify-between items-center md:block"
+              className="text-lg font-semibold cursor-pointer md:cursor-auto border-b-2 border-orange-500 pb-2 flex justify-between items-center md:block"
               onClick={() => setShowQuickLinks(!showQuickLinks)}
             >
               Services
@@ -78,7 +78,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     to={item.link}
-                    className="text-white hover:text-blue-400 transition"
+                    className="text-white hover:text-orange-400 transition"
                   >
                     {item.text}
                   </Link>
@@ -127,14 +127,14 @@ const Footer = () => {
           <div className="space-y-6">
             {/* Contact Info */}
             <div>
-              <h4 className="text-lg font-semibold border-b-2 border-blue-500 pb-2">
+              <h4 className="text-lg font-semibold border-b-2 border-orange-500 pb-2">
                 CONTACT
               </h4>
               <div className="flex items-center gap-2 mt-4">
                 <MdCallEnd className="text-gray-500 text-lg" />
                 <Link
                   to="tel:+91-8968881110"
-                  className="text-white hover:text-blue-400 transition"
+                  className="text-white hover:text-orange-400 transition"
                 >
                   +91-8968881110
                 </Link>
@@ -143,7 +143,7 @@ const Footer = () => {
                 <FaWhatsapp className="text-green-500 text-lg" />
                 <Link
                   to="https://wa.link/b9farw"
-                  className="text-white hover:text-blue-400 transition"
+                  className="text-white hover:text-orange-400 transition"
                 >
                   +91-8968881110
                 </Link>
@@ -152,21 +152,15 @@ const Footer = () => {
 
             {/* Social Media Links */}
             <div>
-              <h4 className="text-lg font-semibold border-b-2 border-blue-500 pb-2">
+              <h4 className="text-lg font-semibold border-b-2 border-orange-500 pb-2">
                 CONNECT WITH US
               </h4>
               <div className="flex space-x-4 mt-4">
                 <Link
-                  to="https://www.instagram.com/dodun.softsolutions"
+                  to="https://www.instagram.com/rasoipro/"
                   className="text-pink-500 text-2xl hover:scale-110 transition"
                 >
                   <FaInstagram />
-                </Link>
-                <Link
-                  to="https://www.linkedin.com/company/dodun-soft-solutions-co"
-                  className="text-blue-700 text-2xl hover:scale-110 transition"
-                >
-                  <FaLinkedin />
                 </Link>
                 <Link
                   to="https://wa.link/b9farw"

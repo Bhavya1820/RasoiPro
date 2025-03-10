@@ -14,7 +14,7 @@ app.use(cors());
 
 //API route for form submission
 app.post("/submit", async (req, res) => {
-  const { fullName, email, phoneNumber, businessType, services, message } =
+  const { fullName, email, phoneNumber, businesstype, services, message } =
     req.body;
 
   try {
@@ -23,8 +23,9 @@ app.post("/submit", async (req, res) => {
       !fullName ||
       !email ||
       !phoneNumber ||
-      !businessType ||
-      !services.length
+      !businesstype ||
+      !Array.isArray(services) ||
+      services.length === 0
     ) {
       return res
         .status(400)
@@ -32,17 +33,17 @@ app.post("/submit", async (req, res) => {
     }
 
     // Check if email already exists
-    const existingEmail = await RasoiPro.findOne({ email });
+    const existingEmail = await Form.findOne({ email });
     if (existingEmail) {
       return res.status(400).json({ error: "Email already exists" });
     }
 
     // Create and save the new form entry
-    const newForm = new RasoiPro({
+    const newForm = new Form({
       fullName,
       email,
       phoneNumber,
-      businessType,
+      businessType: businesstype, // Ensure consistency in field naming
       services,
       message,
     });

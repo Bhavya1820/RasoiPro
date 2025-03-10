@@ -1,5 +1,4 @@
 import React from 'react'
-import PreNavbar from '../PreNavbar/PreNavbar'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Front from './components/front'
@@ -16,7 +15,6 @@ const paymentIntegration = () => {
   const text2= "Accept payments effortlessly with our secure and flexible payment integration. Streamline transactions, reduce errors, and offer multiple payment options for a seamless checkout experience."
   return (
     <>
-    <PreNavbar></PreNavbar>
     <Navbar></Navbar>
     <Front Url={url} Text1={text1} Text2={text2}></Front>
     <Features></Features>

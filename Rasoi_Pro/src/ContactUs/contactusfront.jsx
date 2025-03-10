@@ -41,7 +41,7 @@ const contactusfront = () => {
         <motion.img
           src="https://ik.imagekit.io/jncw2kb8u/busy-woman-doing-many-things-same-time.jpg?updatedAt=1741153583057"
           alt="Luxury Food Display"
-          className="absolute w-full h-full object-cover will-change-transform"
+          className="absolute w-full h-full object-fit will-change-transform"
           style={{
             transformStyle: "preserve-3d",
             rotateX: smoothRotateX,

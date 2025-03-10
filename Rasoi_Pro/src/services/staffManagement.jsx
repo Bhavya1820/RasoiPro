@@ -1,5 +1,4 @@
 import React from 'react'
-import PreNavbar from '../PreNavbar/PreNavbar'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Front from './components/front'
@@ -16,7 +15,6 @@ const staffManagement = () => {
     const text2= "Streamline your restaurant’s staff management effortlessly. Schedule shifts, track attendance, and enhance team productivity with our intuitive staff management system."
   return (
     <>
-    <PreNavbar></PreNavbar>
     <Navbar></Navbar>
     <Front Url={url} Text1={text1} Text2={text2}></Front>
     <Features></Features>

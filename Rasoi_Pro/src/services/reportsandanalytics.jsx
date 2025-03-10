@@ -1,5 +1,4 @@
 import React from 'react'
-import PreNavbar from '../PreNavbar/PreNavbar'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Front from './components/front'
@@ -15,7 +14,6 @@ const reportsandanalytics = () => {
     const text2= "Gain valuable insights with real-time reports and analytics. Track sales, monitor trends, and make data-driven decisions to boost efficiency and profits."
   return (
     <>
-    <PreNavbar></PreNavbar>
     <Navbar></Navbar>
     <Front Url={url} Text1={text1} Text2={text2}></Front>
     {isMobile ? <Report2></Report2>: <Report></Report>}

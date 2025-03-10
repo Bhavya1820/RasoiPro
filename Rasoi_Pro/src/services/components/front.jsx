@@ -7,12 +7,10 @@ import {
   useTransform,
 } from "framer-motion";
 import { useState, useEffect } from "react";
-import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 
-
 const front = ({ Url, Text1, Text2 }) => {
-  const isMedium = useMediaQuery({ minWidth: 768 });
+  //const isMedium = useMediaQuery({ minWidth: 768 });
   const rotateX = useMotionValue(0);
   const rotateY = useMotionValue(0);
 
@@ -41,24 +39,20 @@ const front = ({ Url, Text1, Text2 }) => {
   return (
     <>
       <div className="relative flex justify-center items-center overflow-hidden w-full h-100 md:h-200 perspective-1000">
-        {isMedium ? (
-          <motion.img
-            src={Url}
-            alt="Luxury Food Display"
-            className="absolute w-full h-full object-fit md:object-cover will-change-transform"
-            style={{
-              transformStyle: "preserve-3d",
-              rotateX: smoothRotateX,
-              rotateY: smoothRotateY,
-              scale,
-            }}
-            initial={{ opacity: 0.85, rotateX: 0, rotateY: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
-          />
-        ) : (
-          <div className="absolute w-full h-full bg-black will-change-transform"></div>
-        )}
+        <motion.img
+          src={Url}
+          alt="Luxury Food Display"
+          className="absolute w-full h-full object-fit md:object-cover will-change-transform"
+          style={{
+            transformStyle: "preserve-3d",
+            rotateX: smoothRotateX,
+            rotateY: smoothRotateY,
+            scale,
+          }}
+          initial={{ opacity: 0.85, rotateX: 0, rotateY: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        />
 
         {/* Overlay for readability */}
         <div className="absolute w-full h-full inset-0 bg-black opacity-80 backdrop-blur-lg"></div>
@@ -85,7 +79,7 @@ const front = ({ Url, Text1, Text2 }) => {
             {Text1}
           </motion.h2>
           <motion.p
-            className="poppins-regular mt-3 sm:mt-4 text-gray-300 text-base sm:text-lg md:text-2xl max-w-lg sm:max-w-2xl"
+            className="poppins-regular hidden md:block mt-3 sm:mt-4 text-gray-300 text-base sm:text-lg md:text-2xl max-w-lg sm:max-w-2xl"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, delay: 1, ease: "easeOut" }}

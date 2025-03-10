@@ -1,5 +1,4 @@
 import React from "react";
-import PreNavbar from "../PreNavbar/PreNavbar";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import Front from "./components/front";
@@ -18,7 +17,6 @@ const waiterapp = () => {
     "Streamline order taking and enhance service efficiency with our smart waiter app. Process orders faster, reduce errors, and deliver a seamless dining experience.";
   return (
     <>
-      <PreNavbar></PreNavbar>
       <Navbar></Navbar>
       <Front Url={url} Text1={text1} Text2={text2}></Front>
       <Features></Features>

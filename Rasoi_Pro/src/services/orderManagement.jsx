@@ -1,5 +1,4 @@
 import React from 'react'
-import PreNavbar from '../PreNavbar/PreNavbar'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import AffordablePrice from './components/affordablePrice'
@@ -16,7 +15,6 @@ const orderManagement = () => {
   const text2= "Streamline your restaurant’s order process effortlessly. Track, manage, and fulfill orders with precision to enhance customer satisfaction and boost efficiency."
   return (
     <>
-    <PreNavbar></PreNavbar>
     <Navbar></Navbar>
     <Front Url={url} Text1={text1} Text2={text2}></Front>
     <Features></Features>

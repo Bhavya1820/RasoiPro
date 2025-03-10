@@ -7,10 +7,9 @@ import {
   useTransform,
 } from "framer-motion";
 import { useState, useEffect } from "react";
-import { useMediaQuery } from "react-responsive";
 
 const frontImage = () => {
-  const isMedium = useMediaQuery({ minWidth: 768 });
+  //const isMedium = useMediaQuery({ minWidth: 768 });
   const rotateX = useMotionValue(0);
   const rotateY = useMotionValue(0);
 
@@ -39,24 +38,20 @@ const frontImage = () => {
   return (
     <>
       <div className="relative flex justify-center items-center overflow-hidden w-full h-100 md:h-200 perspective-1000">
-        {isMedium ? (
-          <motion.img
-            src="https://ik.imagekit.io/jncw2kb8u/supermarket-worker-measuring-selling-meat-customer.jpg?updatedAt=1740726577424"
-            alt="Luxury Food Display"
-            className="absolute w-full h-full object-fit md:object-cover will-change-transform"
-            style={{
-              transformStyle: "preserve-3d",
-              rotateX: smoothRotateX,
-              rotateY: smoothRotateY,
-              scale,
-            }}
-            initial={{ opacity: 0.85, rotateX: 0, rotateY: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
-          />
-        ) : (
-          <div className="absolute w-full h-full bg-black will-change-transform"></div>
-        )}
+        <motion.img
+          src="https://ik.imagekit.io/jncw2kb8u/supermarket-worker-measuring-selling-meat-customer.jpg?updatedAt=1740726577424"
+          alt="Luxury Food Display"
+          className="absolute w-full h-full object-fit md:object-cover will-change-transform"
+          style={{
+            transformStyle: "preserve-3d",
+            rotateX: smoothRotateX,
+            rotateY: smoothRotateY,
+            scale,
+          }}
+          initial={{ opacity: 0.85, rotateX: 0, rotateY: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        />
 
         {/* Overlay for readability */}
         <div className="absolute w-full h-full inset-0 bg-black opacity-70 backdrop-blur-lg"></div>
@@ -83,7 +78,7 @@ const frontImage = () => {
             Welcome to the Future of Restaurant Management
           </motion.h4>
           <motion.h2
-            className="poppins-bold text-2xl sm:text-3xl md:text-5xl font-extrabold leading-snug mt-2 sm:mt-4"
+            className="hidden md:block poppins-bold text-2xl sm:text-3xl md:text-5xl font-extrabold leading-snug mt-2 sm:mt-4"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}

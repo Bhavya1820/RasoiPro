@@ -62,7 +62,8 @@ const ContactForm = () => {
         return;
       }
 
-      setResponseMessage("Form submitted successfully!");
+      alert("Form submitted successfully!"); // Alert added here
+
       setFormData({
         fullName: "",
         email: "",

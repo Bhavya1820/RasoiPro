@@ -1,5 +1,4 @@
 import React from "react";
-import PreNavbar from "../PreNavbar/PreNavbar";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import Front from "./components/front";
@@ -18,7 +17,6 @@ const tableorders = () => {
     "Manage and track table orders effortlessly. Ensure quick service, reduce errors, and enhance customer satisfaction with our seamless table order system.";
   return (
     <>
-      <PreNavbar></PreNavbar>
       <Navbar></Navbar>
       <Front Url={url} Text1={text1} Text2={text2}></Front>
       <Features></Features>

@@ -25,14 +25,14 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 left-0 w-full bg-black shadow-md p-4 poppins-medium z-50">
-      <div className="container text-white flex justify-between items-center">
+      <div className="container text-white flex justify-around items-center">
         {/* Logo */}
         <div>
           <Link to="/">
             <img
               src="https://ik.imagekit.io/jncw2kb8u/rasoinavbar.png?updatedAt=1740657833135"
               alt="Logo"
-              className="h-12 w-25"
+              className="h-14 w-25"
             />
           </Link>
         </div>
@@ -136,9 +136,9 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button
           className="md:hidden p-2"
-          onClick={() => setIsMobileMenuOpen(!isOpen)}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 

@@ -7,6 +7,7 @@ import {
   useTransform,
 } from "framer-motion";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const frontImage = () => {
   //const isMedium = useMediaQuery({ minWidth: 768 });
@@ -99,15 +100,17 @@ const frontImage = () => {
             streamline operations, enhance customer experience, and boost
             profits—all in one powerful POS.
           </motion.p>
-          <motion.button
-            className="poppins-regular mt-5 sm:mt-6 px-6 sm:px-8 py-2 sm:py-3 bg-orange-400 hover:bg-orange-500 text-gray-900 font-semibold text-base sm:text-lg rounded-full shadow-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 1, delay: 1.5, ease: "easeOut" }}
-          >
-            Get Started
-          </motion.button>
+          <Link to="/contactus">
+            <motion.button
+              className="poppins-regular mt-5 sm:mt-6 px-6 sm:px-8 py-2 sm:py-3 bg-orange-400 hover:bg-orange-500 text-gray-900 font-semibold text-base sm:text-lg rounded-full shadow-xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 1, delay: 1.5, ease: "easeOut" }}
+            >
+              Get Started
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     </>

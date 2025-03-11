@@ -46,7 +46,7 @@ const Footer = () => {
           {/* Description Section */}
           <div>
             <img
-              src="https://ik.imagekit.io/jncw2kb8u/rasoinavbar.png?updatedAt=1740657833135"
+              src="https://ik.imagekit.io/jncw2kb8u/rasoinavbar.png?updatedAt=1741614929158"
               alt="Rasoi Pro Logo"
               className="w-30"
             />

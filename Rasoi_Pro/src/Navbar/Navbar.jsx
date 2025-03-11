@@ -30,7 +30,7 @@ const Navbar = () => {
         <div>
           <Link to="/">
             <img
-              src="https://ik.imagekit.io/jncw2kb8u/rasoinavbar.png?updatedAt=1740657833135"
+              src="https://ik.imagekit.io/jncw2kb8u/rasoinavbar.png?updatedAt=1741614929158"
               alt="Logo"
               className="h-14 w-25"
             />

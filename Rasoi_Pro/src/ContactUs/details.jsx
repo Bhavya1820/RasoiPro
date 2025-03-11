@@ -57,7 +57,7 @@ const details = () => {
               className="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-6 space-y-4 sm:space-y-0 overflow-hidden"
             >
               <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl flex justify-center">
-                <FaPhoneAlt className="text-orange-500 text-2xl" />
+                <Link  to="tel:+91-8968881110"><FaPhoneAlt className="text-orange-500 text-2xl" /></Link>
               </div>
               <div>
                 <h2 className="poppins-bold font-semibold text-xl text-gray-200">
@@ -98,7 +98,7 @@ const details = () => {
               className="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-6 space-y-4 sm:space-y-0 overflow-hidden"
             >
               <div className="bg-white/10 backdrop-blur-md p-4 rounded-xl flex justify-center">
-                <IoIosMail className="text-orange-500 text-2xl" />
+                <Link to="mailto:contact.rasoipro@gmail.com"><IoIosMail className="text-orange-500 text-2xl" /></Link>
               </div>
               <div>
                 <h2 className="poppins-bold font-semibold text-xl text-gray-200">
